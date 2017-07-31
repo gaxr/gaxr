@@ -1,0 +1,18 @@
+---
+layout: master
+title: YML-归档
+description: yuminglang.com,提供web前端、java、linux、数据库相关技术知识共享。
+---
+
+  {% for post in site.posts %}
+{% unless post.next %}
+  <h2 class="post-title">{{ post.date | date: '%Y 年 %m 月' }}</h2>
+{% else %}
+  {% capture year %}{{ post.date | date: '%Y 年 %m 月' }}{% endcapture %}
+  {% capture nyear %}{{ post.next.date | date: '%Y 年 %m 月' }}{% endcapture %}
+  {% if year != nyear %}
+<h2 class="post-title">{{ post.date | date: '%Y 年 %m 月' }}</h2>
+  {% endif %}
+{% endunless %}
+<p><a href="{{ post.url }}" class="green-link">{{ post.title }}</a></p>
+  {% endfor %}

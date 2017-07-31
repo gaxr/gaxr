@@ -1,0 +1,6 @@
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+permalink:        /:title
+highlighter: rouge
+markdown: kramdown
+kramdown:
+    input: GFM

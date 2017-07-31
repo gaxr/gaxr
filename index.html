@@ -1,0 +1,16 @@
+---
+layout: master
+title: YML-首页
+description: yuminglang.com,提供web前端、java、linux、数据库相关技术知识共享。
+---
+{% for post in site.posts %}
+<section class="post">
+	<header class="post-header">
+		<div class="post-avatar">{{ post.date | date: "%b %d %Y" }}</div>
+		<h2 class="post-title">
+			<a href="{{post.url}}">{{ post.title }}</a>
+		</h2>
+	</header>
+	<div class="post-description">{{ post.excerpt }}</div>
+</section>
+{% endfor %}

@@ -1,2 +1,1 @@
-# gaxr.github.io
-http://www.yuminglang.com
+# [www.yuminglang.com](http://www.yuminglang.com)
