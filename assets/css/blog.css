@@ -5,14 +5,14 @@
 }
 body{
 	font: .85em Consolas, Monaco, 'Andale Mono', monospace;
-	background-color: #fff;
-	color:#444;
+	background-color: #34a83c;
+	color:#f5ff3f;
 	line-height:1.4em;
 }
 
 /*左侧背景色*/
 .sidebar {
-	background: #A757A8;
+	background: #34a83c;
 	color:#fff;
 }
 .pure-button{
@@ -20,7 +20,7 @@ body{
 }
 a {
 	text-decoration: none;
-	color: rgb(61, 146, 201);
+	color: rgb(201, 4, 12);
 }
 
 a:hover, a:focus {
