@@ -78,9 +78,9 @@ curl -XPOST http://localhost:9200/es_test/fulltext/_mapping -d
 curl -XPOST http://localhost:9200/es_test/_settings
 '
 {
-	"index":{
-		"max_result_window":10000000
-	}
+ "index": {
+  "max_result_window": 10000000
+ }
 }
 '
 ```
