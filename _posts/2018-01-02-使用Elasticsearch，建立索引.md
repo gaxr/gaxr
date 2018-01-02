@@ -72,9 +72,23 @@ curl -XPOST http://localhost:9200/es_test/fulltext/_mapping -d
 '
 ```
 
+##索引设置：查询最大返回量
+
+```sh
+curl -XPOST http://localhost:9200/es_test/_settings
+'
+{
+	"index":{
+		"max_result_window":10000000
+	}
+}
+'
+```
+
 ##删除索引
 
 ```sh
 curl -XDELETE 'http://localhost:9200/es_test'
 ```
+
 ~         
