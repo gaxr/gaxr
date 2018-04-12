@@ -90,5 +90,3 @@ curl -XPOST http://localhost:9200/es_test/_settings
 ```sh
 curl -XDELETE 'http://localhost:9200/es_test'
 ```
-
-~         
