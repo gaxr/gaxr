@@ -7,7 +7,7 @@ syntax: 9
 ---
 在Spring Boot中配置使用多数据源示例代码和简要说明。
 
-###1.Maven引入数据库对应的驱动包,
+### 1.Maven引入数据库对应的驱动包,
 ```sh
 oracle：
         <dependency>
@@ -27,7 +27,7 @@ sqlserver:
             <artifactId>mssql-jdbc</artifactId>
         </dependency>
 ```
-###2.Spring数据源连接application.yml配置
+### 2.Spring数据源连接application.yml配置
 ```sh
 spring:
   datasource:
@@ -47,7 +47,7 @@ spring:
       username: root
       password: 1qaz!QAZ
 ```
-###3.Spring Jpa连接application.yml配置
+### 3.Spring Jpa连接application.yml配置
 ```sh
   jpa:
     show-sql: true
@@ -56,7 +56,7 @@ spring:
       naming:
         physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
 ```
-###4.Oracle配置:
+### 4.Oracle配置:
 ```java
 @Configuration
 @EnableTransactionManagement
@@ -88,7 +88,7 @@ public class OracleConfig {
     }
 }
 ```
-###5.Mysql配置
+### 5.Mysql配置
 ```java
 @Configuration
 @EnableTransactionManagement
@@ -117,7 +117,7 @@ public class MysqlConfig {
     }
 }
 ```
-###6.SqlServer配置
+### 6.SqlServer配置
 ```java
 @Configuration
 @EnableTransactionManagement
@@ -146,14 +146,14 @@ public class SqlserverConfig {
     }
 }
 ```
-###6.根据以上配置，数据源将分别作用以下三个包中:
+### 6.根据以上配置，数据源将分别作用以下三个包中:
 ```sh
 com.yuminglang.repository.oracle
 com.yuminglang.repository.mysql
 com.yuminglang.repository.sqlserver
 ```
-###7.简要说明：
-a.使用多数据源时，其中一个连接需要添加`@Primary`注解。
-b.根据`@EnableJpaRepositories`注解中的`basePackages`配置数据源作用范围,
-c.`@ConfigurationProperties`中解析`application.yml`中的连接数据源的用户名/密码/连接url/驱动信息。
+### 7.简要说明：  
+a.使用多数据源时，其中一个连接需要添加`@Primary`注解。  
+b.根据`@EnableJpaRepositories`注解中的`basePackages`配置数据源作用范围,  
+c.`@ConfigurationProperties`中解析`application.yml`中的连接数据源的用户名/密码/连接url/驱动信息。  
    
