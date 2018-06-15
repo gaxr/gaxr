@@ -159,8 +159,11 @@ com.yuminglang.repository.mysql
 com.yuminglang.repository.sqlserver
 ```
 
-### 7.简要说明：  
+### 7.简要说明：
+
 a.使用多数据源时，其中一个连接需要添加`@Primary`注解。
+
 b.根据`@EnableJpaRepositories`注解中的`basePackages`配置数据源作用范围,
+
 c.`@ConfigurationProperties`中解析`application.yml`中的连接数据源的用户名/密码/连接url/驱动信息。
    
