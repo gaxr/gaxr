@@ -7,7 +7,7 @@ syntax: 9
 ---
 使用Elasticsearch，创建/删除索引,以及简单到索引列类型示例，使用cur命令操作，也可以将代码粘贴在Postman中使用。
 
-##创建索引
+## 创建索引
 ```sh
 curl -XPUT http:localhost:9200/es_test -d
 '
@@ -36,7 +36,7 @@ curl -XPUT http:localhost:9200/es_test -d
 '
 ```
 
-##指定索引中列数据类型,是否分词/存储
+## 指定索引中列数据类型,是否分词/存储
 ```sh
 curl -XPOST http://localhost:9200/es_test/fulltext/_mapping -d
 '
@@ -72,7 +72,7 @@ curl -XPOST http://localhost:9200/es_test/fulltext/_mapping -d
 '
 ```
 
-##索引设置：查询最大返回量
+## 索引设置：查询最大返回量
 
 ```sh
 curl -XPOST http://localhost:9200/es_test/_settings
@@ -85,7 +85,7 @@ curl -XPOST http://localhost:9200/es_test/_settings
 '
 ```
 
-##删除索引
+## 删除索引
 
 ```sh
 curl -XDELETE 'http://localhost:9200/es_test'
