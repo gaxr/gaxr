@@ -32,12 +32,12 @@ sqlserver:
 ```sh
 spring:
   datasource:
-    emr:
+    oracle:
       driver-class-name: oracle.jdbc.driver.OracleDriver
       jdbc-url: jdbc:oracle:thin:@192.168.0.128:1521:xe
       username: system
       password: oracle
-    lis:
+    sqlserver:
       driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
       jdbc-url: jdbc:sqlserver://192.168.0.126:1433;DatabaseName=test
       username: sa
