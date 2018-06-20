@@ -187,6 +187,9 @@ border-radius: 50%;
 }
 
 @media ( min-width : 48em) {
+	.post-title {
+	font-size: 1.5em;
+	}
 	.nav-item {
 		display: block;
 		zoom: 1;
