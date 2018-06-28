@@ -8,18 +8,18 @@ syntax: 11
 在Windows系统上安装配置Rabbitmq.
 
 ## 1.下载Rabbitmq
-1.1 Rabbitmq官网地址: https://www.rabbitmq.com
+1.1 Rabbitmq官网地址: [https://www.rabbitmq.com](https://www.rabbitmq.com)
 
-1.2 Rabbitmq官网下载页: http://www.rabbitmq.com/download.html
+1.2 Rabbitmq官网下载页: [http://www.rabbitmq.com/download.html](http://www.rabbitmq.com/download.html)
 
-1.3 Windows版本的可执行安装包下载页: http://www.rabbitmq.com/install-windows.html
+1.3 Windows版本的可执行安装包下载页: [http://www.rabbitmq.com/install-windows.html](http://www.rabbitmq.com/install-windows.html)
 
 1.4 选择 `Installer for Windows systems (from Bintray)` 版下载(rabbitmq-server-3.7.6.exe)
 
 ## 2.下载Erlang
-2.1 Erlang官网地址: http://www.erlang.org
+2.1 Erlang官网地址: [http://www.erlang.org](http://www.erlang.org)
 
-2.2 Erlang官网下载页: http://www.erlang.org/downloads
+2.2 Erlang官网下载页: [http://www.erlang.org/downloads](http://www.erlang.org/downloads)
 
 2.3 根据Windows系统类型选择性下载64位`OTP 21.0.1 Windows 64-bit Binary File` 或者32位 `OTP 21.0.1 Windows 32-bit Binary File`安装包(otp_win64_20.3.exe)
 
