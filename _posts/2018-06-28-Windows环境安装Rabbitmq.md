@@ -14,14 +14,14 @@ syntax: 11
 
 1.3 Windows版本的可执行安装包下载页: http://www.rabbitmq.com/install-windows.html
 
-1.4 选择 `Installer for Windows systems (from Bintray)` 版下载
+1.4 选择 `Installer for Windows systems (from Bintray)` 版下载(rabbitmq-server-3.7.6.exe)
 
 ## 2.下载Erlang
 2.1 Erlang官网地址: http://www.erlang.org
 
 2.2 Erlang官网下载页: http://www.erlang.org/downloads
 
-2.3 根据Windows系统类型选择性下载64位`OTP 21.0.1 Windows 64-bit Binary File` 或者32位 `OTP 21.0.1 Windows 32-bit Binary File`安装包
+2.3 根据Windows系统类型选择性下载64位`OTP 21.0.1 Windows 64-bit Binary File` 或者32位 `OTP 21.0.1 Windows 32-bit Binary File`安装包(otp_win64_20.3.exe)
 
 ##  3.安装Erlang
 3.1 选中Erlang的`opt`安装包，鼠标右键`以管理员身份运行`
@@ -43,7 +43,7 @@ syntax: 11
 
 变量名：`MQ_HOME`，变量值：`C:\RabbitMQServer\rabbitmq_server-3.7.6`
 
-变量名：`ERLANG_HOME`，变量值：`C:\erl10.0.1`
+变量名：`ERLANG_HOME`，变量值：`C:\erl9.3`
 
 系统变量`Path`中增加`%MQ_HOME%\sbin`和`%ERLANG_HOME%\bin`
 
